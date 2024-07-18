@@ -1,0 +1,346 @@
+/* fade animation  */
+.animacion-carga {
+    animation: fadeIn 2.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.animacion-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+
+body {
+    font-family: "Playwrite CU", cursive;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(0deg, cornsilk, #FAF3DD, #C8D5B9, #8FC0A9, #6890B0, #5A94C3);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(90deg, rgba(253, 253, 253, 0.5), rgba(253, 253, 253, 0.5));
+}
+
+.head-text {
+    text-shadow: 2px 2px 5px#505050;
+
+}
+
+.rest-days {
+    text-shadow: 2px 2px 5px#505050;
+    text-decoration: underline;
+}
+
+.details-section li,
+p {
+    text-shadow: 2px 2px 5px#505050;
+}
+
+
+header.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+h1 {
+    color: #000000;
+    font-size: 2em;
+}
+
+.contenedor-galeria {
+    position: relative;
+    background-image: url("imagenes/sirenita_bk_25.png"), url("imagenes/sirenita_bk_25.png");
+    background-repeat: no-repeat;
+    background-position: left top 20px, right 20px bottom 5px;
+    display: grid;
+    place-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px 0;
+    padding: 5%;
+    top: 30px;
+}
+
+.marco-imagen {
+    position: absolute;
+    width: max-content;
+    height: auto;
+    background-image: url("imagenes/klipartz.com.png");
+    background-size: cover;
+    background-position: center;
+    top: 0;
+
+}
+
+.contenedor-galeria img {
+    position: -webkit-sticky;
+    width: 10px;
+    height: 10px;
+    object-fit: contain;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.contenedor-imagen {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #efefef;
+    transition: 0.4s ease-in-out;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+    flex: 0 1 calc(30% - 20px);
+    margin: 5px;
+    display: grid;
+}
+
+.contenedor-imagen img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contenedor-imagen:hover {
+    flex: 1;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.contenedor-introduccion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 3em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    text-align: justify;
+    text-shadow: 2px 2px 5px#505050;
+    text-size-adjust: 100%;
+}
+
+.detalles-bautizo {
+    background-color: #d2b48c;
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    text-shadow: 2px 2px 5px#505050;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.cuenta-regresiva {
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px#505050;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.5em;
+}
+
+.label-maps {
+    text-decoration: underline;
+    ;
+}
+
+.Imagen-Mapa-Lugar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.Imagen-Mapa-Lugar img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.footer-class {
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.8);
+    background: linear-gradient(90deg, rgba(250, 249, 205, 0.8), rgba(253, 253, 253, 0.8));
+    text-decoration: underline;
+}
+
+.footer-class.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.footer-class p {
+    margin: 0;
+    color: #000000;
+}
+
+.imagen-con-titulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 40px);
+    margin: 20px;
+    padding: 2em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.imagen-con-titulo h3 {
+    margin-top: 0;
+}
+
+.Imagen-Mapa-Fiesta img,
+.Imagen-Mapa-religioso img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.texto-overlay {
+    font-size: xx-small;
+}
+
+.descripcion {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.descripcion p {
+    margin-bottom: 10px;
+}
+
+.article-biblia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    padding: 3em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+
+    .contenedor-galeria {
+        background-image: url("imagenes/pngwing.com\ \(1\).png");
+        max-width: max-content;
+        background-position: 13dvh;
+        background-blend-mode: hard-light;
+        background-repeat: repeat;
+        background-position-y: bottom;
+
+        /* Imagen de fondo para teléfonos */
+    }
+
+    .marco-imagen {
+        position: absolute;
+        width: max-content;
+        height: auto;
+        background-image: url("imagenes/klipartz.com.png");
+        background-size: cover;
+        background-position: center;
+        top: 0;
+
+    }
+
+    .footer-class {
+        text-shadow: 2px 2px 5px#505050;
+    }
+
+
+    .imagen-con-titulo {
+        width: 100%;
+        margin: 10px 0;
+        padding: 1em;
+    }
+
+    .descripcion {
+        text-align: center;
+    }
+
+    .descripcion p {
+        margin-bottom: 5px;
+    }
+
+    header h1 {
+        font-size: 1.5em;
+        padding: 10px;
+    }
+}
